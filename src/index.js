@@ -41,6 +41,31 @@ store.dispatch( addNewToDo( "Review React" ) );
 // When using Redux, we use the <Provider> component with...
 // a "store" prop to pass our global state info down to...
 // wheverever we need it (whichever component needs it.)
+
+/**
+ * <BrowserRouter> (as <Router>)
+ * React router uses the "BrowserRouter" to mark an area for
+ * "swappable" / "changing" content.
+ * 
+ * <Route>
+ * Each set of content you can control display using
+ * the "Route" component.
+ * <Route path="" />
+ * Set a value for "path" to represent what needs to
+ * be in the address bar for this to display.
+ * <Route exact>
+ * Use the "exact" prop to make the router display
+ * the components only for EXACT string matches to
+ * your path!
+ * <Route component={} />
+ * Tell this route which component should display by
+ * passing a component via its "component" prop.
+ * <Route></Route>
+ * You can include multiple elements (or even more
+ * routes) inside of a Route component, if you use both
+ * the "open" and "closing" tag, instead of the self
+ * -terminating syntax.
+ */
 ReactDOM.render(
   <Provider store={store}>
     <h1>React-Redux To-Do List (TECHCareers)</h1>
